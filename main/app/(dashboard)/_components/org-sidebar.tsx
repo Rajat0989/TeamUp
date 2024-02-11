@@ -14,15 +14,15 @@ export const OrgSidebar = () => {
   return (
     <div className="hidden lg:flex flex-col space-y-6 w-48 px-3 pt-5">
       <Link href="/">
-        <div className="flex items-center gap-x-2">
+        <div className="flex items-center justify-center gap-x-2">
           <Image
-            src="/"
+            src="/logo.svg"
             alt=""
-            height={20}
+            height={40}
             width={40}
           />
-          <span className="">
-            Name
+          <span className="text-xl">
+            NextBoard
           </span>
         </div>
       </Link>

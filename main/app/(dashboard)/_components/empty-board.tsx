@@ -2,11 +2,12 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
+
 export const EmptyBoard = () => {
     return(
         <div className="h-full flex flex-col items-center justify-center">
             <Image
-                src="/"
+                src="/elements.svg"
                 alt=""
                 height={200}
                 width={200}

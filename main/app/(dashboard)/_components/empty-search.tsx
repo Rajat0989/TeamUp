@@ -1,11 +1,12 @@
 
 import Image from "next/image";
 
+
 export const EmptySearch = () => {
     return(
         <div className="h-full flex flex-col items-center justify-center">
             <Image
-                src="/"
+                src="/empty-search.svg"
                 alt=""
                 height={200}
                 width={200}
