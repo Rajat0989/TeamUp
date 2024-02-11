@@ -11,10 +11,10 @@ const DashBoardLayout = (
     { children }: DashBoardLayoutProps
 ) => {
   return (
-    <main className="h-screen">
+    <main className="h-screen overflow-hidden">
         <Sidebar />
     <div className="h-full pl-[60px]">
-        <div className="h-full flex gap-x-3">
+        <div className="h-full flex">
                 <OrgSidebar />
             <div className="h-full flex-1">
                 <Navbar />

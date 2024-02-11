@@ -2,31 +2,23 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Poppins } from "next/font/google";
 import { LayoutDashboard, Star } from "lucide-react";
 import { OrganizationSwitcher } from "@clerk/nextjs";
 import { useSearchParams } from "next/navigation";
-
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
-const font = Poppins({
-  subsets: ["latin"],
-  weight: ["600"],
-});
 
 export const OrgSidebar = () => {
   const searchParams = useSearchParams();
   const favorites = searchParams.get("favorites");
 
   return (
-    <div className="hidden lg:flex flex-col space-y-6 w-44 pl-5 pt-5">
+    <div className="hidden lg:flex flex-col space-y-6 w-48 px-3 pt-5">
       <Link href="/">
         <div className="flex items-center gap-x-2">
           <Image
             src="/"
-            alt="Logo"
-            height={40}
+            alt=""
+            height={20}
             width={40}
           />
           <span className="">
@@ -47,8 +39,8 @@ export const OrgSidebar = () => {
             organizationSwitcherTrigger: {
               padding: "6px",
               width: "100%",
-              borderRadius: "8px",
-              border: "1px solid #E5E7EB",
+              borderRadius: "10px",
+              border: "2px solid #e1e1e1",
               justifyContent: "space-between",
               backgroundColor: "white",
             }
@@ -75,7 +67,7 @@ export const OrgSidebar = () => {
         >
           <Link href={{
             pathname: "/",
-            query: { favorites: true }
+            query: { favourites: true }
           }}>
             <Star className="h-4 w-4 mr-2" />
             Favorite boards
