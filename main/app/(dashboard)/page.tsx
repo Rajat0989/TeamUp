@@ -14,7 +14,7 @@ const Page = ({ searchParams }: PageProps) => {
   const { organization } = useOrganization()
 
   return (
-    <div className="h-screen flex-1 ">
+    <div className="h-screen flex-1 px-4">
       {!organization ? (
         <EmptyOrg />
       ) : (
