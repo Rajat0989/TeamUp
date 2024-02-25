@@ -12,7 +12,7 @@ export const OrgSidebar = () => {
   const favorites = searchParams.get("favorites");
 
   return (
-    <div className="hidden lg:flex flex-col space-y-6 w-48 px-3 pt-5">
+    <div className="hidden lg:flex flex-col space-y-6 w-48 px-3 pt-5 bg-[#FFF6E9]">
       <Link href="/">
         <div className="flex items-center justify-center gap-x-2">
           <Image
